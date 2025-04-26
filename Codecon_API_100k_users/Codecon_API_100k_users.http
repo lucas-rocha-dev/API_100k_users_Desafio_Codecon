@@ -1,0 +1,6 @@
+@Codecon_API_100k_users_HostAddress = http://localhost:5133
+
+GET {{Codecon_API_100k_users_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
