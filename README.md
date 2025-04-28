@@ -1,4 +1,6 @@
-🚀 Codecon 100k Users Challenge API
+# Desafio Técnico: Performance e Análise de Dados via API
+### [Documentação Swagger](https://app.swaggerhub.com/apis-docs/lucasrocha-845/codecon-api_100_k_users/1.0)
+## 🚀 Codecon 100k Users Challenge API
 API desenvolvida para o desafio Codecon, focada em alta performance e manipulação de grandes volumes de dados (100k usuários).
 
 🛠 Tecnologias
@@ -8,7 +10,8 @@ ASP.NET Core Web API
 
 C#
 
-📌 Funcionalidades
+
+### 📌 Funcionalidades
 Armazenamento em memória de usuários.
 
 Consulta dos Top 5 países com mais Super Users (usuários ativos com score ≥ 900).
@@ -22,7 +25,7 @@ Relatório de logins diários, filtrando por quantidade mínima de acessos.
 Todos os endpoints retornam também o tempo de execução da operação em milissegundos.
 
 
-⚡ Observações
+### ⚡ Observações
 Os dados são armazenados apenas em memória.
 
 Ideal para testes de desempenho e simulação de cenários com grande volume de dados.
