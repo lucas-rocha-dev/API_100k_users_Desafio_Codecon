@@ -34,7 +34,7 @@ namespace Codecon_API_100k_users.Controllers
             stopwatch.Stop();
             var tempoMs = stopwatch.ElapsedMilliseconds;
 
-            return Ok(user.Count + "tudo isso de usuarios " + tempoMs);
+            return Ok(user.Count + " foram registrado com sucesso! " + tempoMs);
         }
 
         [HttpGet("TopCountries")] 
