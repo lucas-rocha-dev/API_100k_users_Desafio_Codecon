@@ -1,5 +1,4 @@
 ﻿namespace Test_API_100k_users { 
-using Codecon_API_100k_users;
 using Codecon_API_100k_users.Data;
 using Codecon_API_100k_users.Services;
 
@@ -16,14 +15,23 @@ using Codecon_API_100k_users.Services;
                     Pais = "Brasil"
                 }
             };
-        UserServices userService = new UserServices();
+        private IUserService _userService = new UserServices();
 
         [TestMethod]
         public void TestPostUsers()
         {
-
             // Act
-            List<User> result = userService.PostUsers(user);
+            List<User> result = _userService.PostUsers(user);
+            Assert.IsNotNull(result[0]);
+            Assert.AreEqual("João", result[0].Nome);
+
+        }
+
+        [TestMethod]
+        public void SuperUsers()
+        {
+            // Act
+            List<User> result = _userService.SuperUsers(user);
             Assert.IsNotNull(result[0]);
             Assert.AreEqual("João", result[0].Nome);
 
