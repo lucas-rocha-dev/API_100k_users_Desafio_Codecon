@@ -5,6 +5,10 @@ VisualStudioVersion = 17.13.35919.96
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Codecon_API_100k_users", "Codecon_API_100k_users\Codecon_API_100k_users.csproj", "{DA671D8B-079F-4E42-89F3-6D945C25F736}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Testes", "Testes", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test_API_100k_users", "Test_API_100k_users\Test_API_100k_users.csproj", "{6B1ADA6D-5B1C-40FC-BD7F-28193E87D7FA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +19,16 @@ Global
 		{DA671D8B-079F-4E42-89F3-6D945C25F736}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DA671D8B-079F-4E42-89F3-6D945C25F736}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA671D8B-079F-4E42-89F3-6D945C25F736}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B1ADA6D-5B1C-40FC-BD7F-28193E87D7FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B1ADA6D-5B1C-40FC-BD7F-28193E87D7FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B1ADA6D-5B1C-40FC-BD7F-28193E87D7FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B1ADA6D-5B1C-40FC-BD7F-28193E87D7FA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6B1ADA6D-5B1C-40FC-BD7F-28193E87D7FA} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F186D4D1-D2D9-413F-8525-F18293025D7C}
