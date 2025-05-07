@@ -36,7 +36,7 @@ using Codecon_API_100k_users.Services;
         {
             // Act
             List<User> result = _userService.PostUsers(user);
-
+            //Assert
             Assert.IsNotNull(result[0]);
             Assert.AreEqual("João", result[0].Nome);
 
