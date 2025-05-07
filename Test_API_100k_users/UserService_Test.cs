@@ -4,7 +4,7 @@ using Codecon_API_100k_users.Dto;
 using Codecon_API_100k_users.Services;
 
     [TestClass]
-    public sealed class Test_API_100k_users 
+    public sealed class UserService_Test 
     {
         // Arrange
         List<User> user = new List<User> {
