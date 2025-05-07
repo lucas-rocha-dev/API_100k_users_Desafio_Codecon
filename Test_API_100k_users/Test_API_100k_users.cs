@@ -1,7 +1,7 @@
 ﻿namespace Test_API_100k_users { 
 using Codecon_API_100k_users.Data;
-    using Codecon_API_100k_users.Dto;
-    using Codecon_API_100k_users.Services;
+using Codecon_API_100k_users.Dto;
+using Codecon_API_100k_users.Services;
 
     [TestClass]
     public sealed class Test_API_100k_users 
@@ -36,6 +36,7 @@ using Codecon_API_100k_users.Data;
         {
             // Act
             List<User> result = _userService.PostUsers(user);
+
             Assert.IsNotNull(result[0]);
             Assert.AreEqual("João", result[0].Nome);
 
@@ -46,6 +47,7 @@ using Codecon_API_100k_users.Data;
         {
             // Act
             List<User> result = _userService.SuperUsers(user);
+            //Assert
             Assert.IsNotNull(result[0]);
             Assert.AreEqual("João", result[0].Nome);
 
@@ -56,6 +58,7 @@ using Codecon_API_100k_users.Data;
         {
             // Act
             List<TopCountriesDto> result = _userService.TopCountries(user);
+            //Assert
             Assert.IsNotNull(result[0]);
             Assert.AreEqual("Brasil", result[0].Pais);
         }
@@ -65,6 +68,7 @@ using Codecon_API_100k_users.Data;
         {
             // Act
             List<TeamInsightsDto> result = _userService.TeamInsights(user);
+            //Assert
             Assert.IsNotNull(result[0]);
             Assert.AreEqual("Equipe A", result[0].Nome);
 
@@ -74,6 +78,7 @@ using Codecon_API_100k_users.Data;
         {
             // Act
             List<ActivePerDayDto> result = _userService.ActiveUsersPerDay(user,1);
+            //Assert
             Assert.IsNotNull(result[0]);
             Assert.AreEqual(new DateTime(1991, 08, 20), result[0].Date);
 
