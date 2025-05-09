@@ -2,6 +2,7 @@
 ### [Documentação Swagger](https://app.swaggerhub.com/apis-docs/lucasrocha-845/codecon-api_100_k_users/1.0)
 ## 🚀 Codecon 100k Users Challenge API
 API desenvolvida para o desafio Codecon, focada em alta performance e manipulação de grandes volumes de dados (100k usuários).
+
 Docker disponível
 
 🛠 Tecnologias
